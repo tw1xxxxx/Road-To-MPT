@@ -30,8 +30,9 @@ public class NewCarChoiceController : MonoBehaviour
             ButtonCar_1.SetActive(true);
         }
         if(car_pos == 2){
-           CarName.text = ("Не придумал названия").ToString();
+           CarName.text = ("BMW E30").ToString();
            ButtonCar_2.SetActive(true);
+           Car_2.SetActive(true);
         }
         //меня не волнует что это костыли
     }

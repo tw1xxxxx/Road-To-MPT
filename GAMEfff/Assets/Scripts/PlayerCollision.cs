@@ -5,11 +5,8 @@ using System.Collections;
 using System.Threading;
 public class PlayerCollision : MonoBehaviour
 {
-    public static int a;
-    public double timer;
     public PlayerScript Player;
     public static int CrashCheck;
-    private double bbb;
 
     void OnCollisionExit(Collision collisionInfo){
         if(collisionInfo.collider.tag == "Obstacle"){

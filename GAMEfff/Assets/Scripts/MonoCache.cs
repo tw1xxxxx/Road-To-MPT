@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MonoCache : MonoBehaviour
 {
-public static List<MonoCache> allUpdate = new List<MonoCache>(10001);
+public static List<MonoCache> allUpdate = new List<MonoCache>(50001);
 
 private void OnEnable() => allUpdate.Add(this);
 private void OnDisable() => allUpdate.Remove(this);

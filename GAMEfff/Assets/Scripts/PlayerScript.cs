@@ -2,18 +2,14 @@ using UnityEngine;
 
 public class PlayerScript : MonoCache
 {
-      public float zxc = 0.11f;
+      public float zxc = 0.011f;
       private bool _moveRight, _moveLeft;
 
-    public void MoveR(bool moveRight)
-    {
-          _moveRight = moveRight;  
-    }
+    public void MoveR(bool moveRight) => _moveRight = moveRight;  
+    
 
-    public void MoveL(bool moveLeft)
-    {
-          _moveLeft = moveLeft;
-    }
+    public void MoveL(bool moveLeft) => _moveLeft = moveLeft;
+    
     
 public override void OnTick (){
       
