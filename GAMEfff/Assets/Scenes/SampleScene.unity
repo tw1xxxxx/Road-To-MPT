@@ -3008,7 +3008,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5a07b089b17f564195f18fff1911bb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 0
   Player: {fileID: 0}
 --- !u!65 &719147412
 BoxCollider:
@@ -7398,7 +7397,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5a07b089b17f564195f18fff1911bb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 0
   Player: {fileID: 1946182424}
 --- !u!114 &1946182427
 MonoBehaviour:
@@ -8210,7 +8208,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5a07b089b17f564195f18fff1911bb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 0
   Player: {fileID: 0}
 --- !u!54 &2122607595
 Rigidbody:
@@ -8728,7 +8725,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5a07b089b17f564195f18fff1911bb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 1e+177
   Player: {fileID: 0}
 --- !u!1 &1072941089514423494
 GameObject:

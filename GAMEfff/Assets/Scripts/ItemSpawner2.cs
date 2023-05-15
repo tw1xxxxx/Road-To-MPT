@@ -20,11 +20,11 @@ public class ItemSpawner2 : MonoBehaviour
     }
     private void SpawnItem()
     {
-        var a=Random.Range(1, 6);
+        var a=Random.Range(1, 7);
         if(a==1)
         {
             Instantiate(RS);
-            RS.transform.position = new Vector3( Random.Range(-1.3f, -0.8f), 1.046f, 229.6f);
+            RS.transform.position = new Vector3( Random.Range(-1.3f, -0.8f), 1.3f, 229.6f);
         }
         if(a==2)
         {
@@ -44,12 +44,12 @@ public class ItemSpawner2 : MonoBehaviour
         if(a==5)
         {
             Instantiate(GTR);
-            GTR.transform.position = new Vector3( Random.Range(-1.3f, -0.8f), 1.3f, 229.6f);
+            GTR.transform.position = new Vector3( Random.Range(-1.3f, -0.8f), 1.04f, 229.6f);
         }  
         if(a==6)
         {
             Instantiate(AMERICAN);
-            AMERICAN.transform.position = new Vector3( Random.Range(-1.3f, -0.8f), 1.3f, 229.6f);
+            AMERICAN.transform.position = new Vector3( Random.Range(-1.3f, -0.8f), 1.64f, 229.6f);
         }  
     }
 }
