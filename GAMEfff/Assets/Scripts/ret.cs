@@ -7,6 +7,7 @@ public class ret : MonoBehaviour
     public GameObject c63;
     public GameObject BatmanCar;
     public GameObject bmw;
+    public GameObject mos;
     public void Start()
     {   
         int wow = NewCarChoiceController.ChousenCar;
@@ -18,6 +19,9 @@ public class ret : MonoBehaviour
         }
         if(wow == 2){
         bmw.SetActive(true);
+        }
+        if(wow == 3){
+        mos.SetActive(true);
         }
     }
 }

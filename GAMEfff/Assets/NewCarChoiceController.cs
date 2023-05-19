@@ -11,9 +11,11 @@ public class NewCarChoiceController : MonoBehaviour
     public GameObject ButtonCar_0;//Визуал
     public GameObject ButtonCar_1;//Визуал
     public GameObject ButtonCar_2;//Визуал
+     public GameObject ButtonCar_3;//Визуал
     public GameObject Car_0;//Машина
     public GameObject Car_1;//Машина
     public GameObject Car_2;//Машина
+    public GameObject Car_3;//Машина
 
    
     public void Start()
@@ -34,7 +36,12 @@ public class NewCarChoiceController : MonoBehaviour
            ButtonCar_2.SetActive(true);
            Car_2.SetActive(true);
         }
-        //меня не волнует что это костыли
+        if(car_pos == 3){
+           CarName.text = ("МОСКВИЧ").ToString();
+           ButtonCar_3.SetActive(true);
+           Car_3.SetActive(true);
+        }
+        
     }
     public void Button_0(){
         if(car_pos != 0){
@@ -42,10 +49,12 @@ public class NewCarChoiceController : MonoBehaviour
         Car_0.SetActive(true);
         Car_1.SetActive(false);
         Car_2.SetActive(false);
+        Car_3.SetActive(false);
 
         ButtonCar_0.SetActive(true);
         ButtonCar_1.SetActive(false);
         ButtonCar_2.SetActive(false);
+        ButtonCar_3.SetActive(false);
         }
         car_pos=0;
         PlayerPrefs.SetInt("Car_menu_position", 0);
@@ -57,9 +66,11 @@ public class NewCarChoiceController : MonoBehaviour
         Car_1.SetActive(true);
         Car_2.SetActive(false);
         Car_0.SetActive(false);
+        Car_3.SetActive(false);
         ButtonCar_0.SetActive(false);
         ButtonCar_2.SetActive(false);
         ButtonCar_1.SetActive(true);
+        ButtonCar_3.SetActive(false);
 
         }
         car_pos=1;
@@ -72,14 +83,34 @@ public class NewCarChoiceController : MonoBehaviour
         Car_0.SetActive(false);
         Car_2.SetActive(true);
         Car_1.SetActive(false);
+        Car_3.SetActive(false);
 
         ButtonCar_0.SetActive(false);
         ButtonCar_1.SetActive(false);
         ButtonCar_2.SetActive(true);
+        ButtonCar_3.SetActive(false);
         
         }
         car_pos = 2;
         PlayerPrefs.SetInt("Car_menu_position", 2);
         ChousenCar = 2;
+    }
+    public void Button_3(){
+        if(car_pos != 3){
+        CarName.text = ("Москвич").ToString();
+        Car_0.SetActive(false);
+        Car_2.SetActive(false);
+        Car_1.SetActive(false);
+        Car_3.SetActive(true);
+
+        ButtonCar_0.SetActive(false);
+        ButtonCar_1.SetActive(false);
+        ButtonCar_2.SetActive(false);
+        ButtonCar_3.SetActive(true);
+        
+        }
+        car_pos = 3;
+        PlayerPrefs.SetInt("Car_menu_position", 3);
+        ChousenCar = 3;
     }
 }
