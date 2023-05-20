@@ -37,7 +37,7 @@ public class NewCarChoiceController : MonoBehaviour
            Car_2.SetActive(true);
         }
         if(car_pos == 3){
-           CarName.text = ("МОСКВИЧ").ToString();
+           CarName.text = ("MOSCKVICH 3").ToString();
            ButtonCar_3.SetActive(true);
            Car_3.SetActive(true);
         }
@@ -97,7 +97,7 @@ public class NewCarChoiceController : MonoBehaviour
     }
     public void Button_3(){
         if(car_pos != 3){
-        CarName.text = ("Москвич").ToString();
+        CarName.text = ("MOSCKVICH 3").ToString();
         Car_0.SetActive(false);
         Car_2.SetActive(false);
         Car_1.SetActive(false);
